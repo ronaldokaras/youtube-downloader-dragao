@@ -61,12 +61,14 @@ Este repositório é a materialização daquele diálogo — uma ferramenta real
 
 ## 🚀 Instalação
 
-
- Clone o repositório
 ```bash
-git clone [https://github.com/ronaldokaras/youtube-downloader-dragao.git](https://github.com/ronaldokaras/youtube-downloader-dragao.git)
-cd youtube-downloader-dragao
+ Clone o repositório
 ```
+
+`git clone` [https://github.com/ronaldokaras/youtube-downloader-dragao.git](https://github.com/ronaldokaras/youtube-downloader-dragao.git)
+
+`cd youtube-downloader-dragao`
+
 
 # Instale as dependências oficiais
 ```bash
@@ -81,11 +83,11 @@ echo yt-dlp > requirements.txt
 ⚙️ Pré-requisitos do Sistema (Recomendado)
 Para que a mesclagem de áudio/vídeo e o pós-processamento funcionem, instale o FFmpeg e o Node.js:
 
-Windows: Baixe o FFmpeg em ``ffmpeg.org`` e adicione-o ao PATH do sistema; Node.js via ``nodejs.org``.
+```Windows:``` Baixe o FFmpeg em `ffmpeg.org` e adicione-o ao PATH do sistema; Node.js via `nodejs.org`
 
-Linux: sudo apt install ffmpeg nodejs
+```Linux:``` ``` sudo apt install ffmpeg nodejs ```
 
-macOS: brew install ffmpeg node
+```macOS:``` ``` brew install ffmpeg node ```
 
 ## 🎯 Exemplos Práticos
 
