@@ -1,2 +1,2 @@
-# Instale as dependências oficiais
-pip install -r requirements.txt
+# Instale a dependência
+yt-dlp
