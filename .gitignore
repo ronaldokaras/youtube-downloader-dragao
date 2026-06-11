@@ -1,44 +1,67 @@
+# 🛡️ .gitignore – Instituto Nozes & Matemática Aplicada
+# Segurança e limpeza para o repositório do Dragão
+
 # Python caches
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
 # Arquivos de mídia baixados (para não inundar o git)
 *.mp4
 *.mp3
 *.mkv
 *.webm
+*.avi
+*.mov
+*.flac
+*.aac
+*.opus
 
 # Ambientes virtuais
 venv/
 .venv/
+env/
+env.bak/
+pythonenv/
 
 # Configurações do editor
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 
 # Logs e arquivos temporários
 *.log
 *.tmp
 *.bak
+*.temp
 
 # Configurações do sistema
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Arquivos de configuração sensíveis
+# Arquivos de configuração sensíveis (NUNCA subir para o Git!)
 .env
 config.json
 credentials.json
+secrets.json
+*.key
+*.pem
 
 # Arquivos de build
 dist/
 build/
 *.egg-info/
+*.egg
 
-# Arquivos de teste
+# Arquivos de teste (se quiser manter separado)
 tests/
+test_*.py
 
 # Outros arquivos que não devem ser versionados
 *.swp
 *.swo
 *.swn
+*~
