@@ -1,0 +1,44 @@
+# Python caches
+__pycache__/
+*.pyc
+
+# Arquivos de mídia baixados (para não inundar o git)
+*.mp4
+*.mp3
+*.mkv
+*.webm
+
+# Ambientes virtuais
+venv/
+.venv/
+
+# Configurações do editor
+.vscode/
+.idea/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Configurações do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração sensíveis
+.env
+config.json
+credentials.json
+
+# Arquivos de build
+dist/
+build/
+*.egg-info/
+
+# Arquivos de teste
+tests/
+
+# Outros arquivos que não devem ser versionados
+*.swp
+*.swo
+*.swn
