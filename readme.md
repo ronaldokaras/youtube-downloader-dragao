@@ -61,20 +61,38 @@ Este repositório é a materialização daquele diálogo — uma ferramenta real
 
 ## 🚀 Instalação
 
+
+ Clone o repositório
 ```bash
-# Clone o repositório
-git clone https://github.com/ronaldokaras/youtube-downloader-dragao.git
+git clone [https://github.com/ronaldokaras/youtube-downloader-dragao.git](https://github.com/ronaldokaras/youtube-downloader-dragao.git)
 cd youtube-downloader-dragao
+```
 
-# Instale a dependência
-pip install yt-dlp
+# Instale as dependências oficiais
+```bash
+pip install -r requirements.txt
+```
+💡 Se o arquivo requirements.txt não existir por algum motivo, crie‑o antes com:
 
-# (Opcional) Instale o FFmpeg e o Node.js conforme seu sistema
+```bash
+echo yt-dlp > requirements.txt
+```
 
-## Exemplos práticos
+⚙️ Pré-requisitos do Sistema (Recomendado)
+Para que a mesclagem de áudio/vídeo e o pós-processamento funcionem, instale o FFmpeg e o Node.js:
 
-# Vídeo em melhor qualidade até 1080p
-python download_yt.py "https://www.youtube.com/watch?v=..."
+Windows: Baixe o FFmpeg em ``ffmpeg.org`` e adicione-o ao PATH do sistema; Node.js via ``nodejs.org``.
+
+Linux: sudo apt install ffmpeg nodejs
+
+macOS: brew install ffmpeg node
+
+## 🎯 Exemplos Práticos
+
+```bash
+# Vídeo em melhor qualidade até 1080p (Padrão do Dragão)
+
+python download_yt.py "[https://www.youtube.com/watch?v=....]"
 
 # Apenas áudio em MP3 320kbps
 python download_yt.py "URL" --audio-only --audio-format mp3 --audio-quality 320
@@ -82,19 +100,22 @@ python download_yt.py "URL" --audio-only --audio-format mp3 --audio-quality 320
 # Playlist (vídeos 1 a 5)
 python download_yt.py "URL_PLAYLIST" --playlist-start 1 --playlist-end 5
 
-# Usando cookies do Chrome (para vídeos restritos)
+# Usando cookies do Chrome (para vídeos restritos ou contornar blocks)
 python download_yt.py "URL" --cookies-from-browser chrome
 
 # Com proxy SOCKS5 e limite de 500 KB/s
 python download_yt.py "URL" --proxy socks5://127.0.0.1:9050 --limit-rate 500
 
-# Simular (ver o que seria baixado)
+# Simular (ver os formatos disponíveis sem baixar nada)
 python download_yt.py "URL" --simulate
 
 # Salvar em uma pasta específica
 python download_yt.py "URL" -o ./meus_videos
+```
 
+## 🔍 Manual Completo de Poderes
+Para ver todos os argumentos, flags e customizações disponíveis na ferramenta:
 
-# Para ver todos os argumentos:
-
+```bash
 python download_yt.py --help
+```
